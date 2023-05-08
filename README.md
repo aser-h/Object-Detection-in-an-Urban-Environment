@@ -84,6 +84,14 @@ comparison to choose the best model to deploy
 
 as shown in the figures above, the mobilNet has the best results although it was expected that the resNet would have the best results.
 
+## Deployment
+![Alt text](SSD%20MobileNet%20V1%20%20640x640(2)/output(MobileNet).gif)
+
+                                    mobileNet output
+
+
+
+
 ## Discusson 
 
 After conducting various experiments on the standard efficient model during training and validation, it was observed that training without augmentations resulted in the model overfitting. The mAP values were inconsistent due to an oscillating loss curve, indicating that the training landscape had not converged correctly. Although changing the LR rate/optimizer helped, data augmentation provided a more stable loss curve. For the two other variants in the pipeline, a standard ResNet 50 was used as the baseline model to assess performance in terms of overfitting on validation without augmentation. Similar to the efficient net, ResNet suffered from comparable issues without augmentation. However, MobileNet with Masked RCNN showed slightly better loss convergence than both efficient net and ResNet. As further follow-ups, checking the LR decay, optimizer, annealing factors, more augmentations, and trying custom models were suggested.
