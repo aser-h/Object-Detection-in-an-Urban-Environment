@@ -1,0 +1,2 @@
+# Object Detection in an Urban Environment
+ The goal of this project is to utilize the knowledge acquired during the course to implement a pretrained neural network for object detection and classification using data from Waymo. The dataset provided for the project consists of images of urban environments containing annotated cyclists, pedestrians, and vehicles. The project aims to apply the acquired skills to detect and classify objects using the provided dataset.
